@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reg.css">
+    <title>Cascos YC - Registro de Usuarios </title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>REGISTRO DE USUARIOS<br>CASCOS YC</h1>
+            <form id="register-form" action="#" method="post">
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="tel" name="telefono" placeholder="Número de telefono / celular" required>
+                
+                <select name="tipo_documento" required>
+                    <option value="" disabled selected>Tipo de documento</option>
+                    <option value="cc">Cédula de Ciudadanía</option>
+                    <option value="ti">Tarjeta de Identidad</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <input type="text" name="documento" placeholder="Número de documento" required>
+                <input type="email" name="correo" placeholder="Correo electronico" required>
+                <input type="text" name="direccion" placeholder="Dirección" required>
+                
+                <select name="departamento" required>
+                    <option value="" disabled selected>Departamento</option>
+                    <option value="departamento1">Departamento 1</option>
+                    <option value="departamento2">Departamento 2</option>
+                </select>
+                
+                <select name="municipio" required>
+                    <option value="" disabled selected>Municipio</option>
+                    <option value="municipio1">Municipio 1</option>
+                    <option value="municipio2">Municipio 2</option>
+                </select>
+                
+                <button type="submit">Registrar</button>
+            </form>
+            
+        </div>
+        <div class="image-container">
+            <img src="../images/casco.png" alt="Casco"> 
+        </div>
+    </div>
+    <script src="../js/regUsers.js"></script>
+    <script src="../js/scriptGeneral.js"></script>
+</body>
+</html>

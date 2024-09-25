@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Panel izquierdo fondo rojo e imagen del casco*/
+.left-panel {
+    background-color: #ff3b30; 
+    position: relative;
+    
+}
+.helmet-img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    margin-bottom: 250px;
+}
+
+/* Triángulo blanco dentro del triangulo rojo */
+.triangulo{
+    width: 10px;
+    height: 10px;
+    border-bottom: 300px solid #ffffff;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    margin-top: auto;
+}
+
+
+.right-panel {
+    background-color: #ffffff;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+button {
+    font-size: 1.2em;
+}
+
+.small-text {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    font-size: 0.9em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}

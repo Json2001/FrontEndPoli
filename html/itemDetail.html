@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascos YC - HomePage</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid main-content">
+        <div class="row">
+            <!--contenedor de la barra lateral de opciones -->
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h3 class="sidebar-title">CASCOS YC</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="homePageClient.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productsClient.html">Contenido en stock</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informationClient.html">Información</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <img src="../images/casco.png" alt="Imagen del casco" class="helmet-img2">
+                </div>
+            </nav>
+
+            <!-- contenedor para mostrar el header -->
+            <div class="col-md-10 content-container">
+                <!-- Header -->
+                <header class="d-flex justify-content-between align-items-center py-2 bg-light px-3">
+                    <h2>Cliente Juan Perez</h2>
+                        <button class="btn btn-danger"  id="closeSession">Cerrar sesión</button>
+                </header>
+                
+                <!-- contendedor para mostrar las card de los cascos -->
+                <main class="mt-4">
+                <!-- Sección de Imágenes en Exhibición -->
+                    <div class="container mt-4">
+                        <h2 class="text-center">Detalle del producto</h2>
+                        <div id="exhibitionCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Casco 1">
+                    </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Casco 2">
+                        </div>
+                     <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Casco 3">
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#exhibitionCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#exhibitionCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                     </button>
+                    </div>
+                 </div>
+                </main>
+                <div class="espaciador"></div>
+                <div>
+                    <h4>Descripción del productos</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel nisi dui. Donec et velit ac mauris ullamcorper malesuada. Donec sit amet varius neque. Donec laoreet, felis in viverra placerat, mauris sem fringilla lectus, sed semper diam erat vitae neque. Duis facilisis, mauris non semper fringilla, felis enim tincidunt neque, ut scelerisque orci turpis in mi. Integer consectetur</p>
+
+                    <h4>Características del producto</h4>
+                    <ul>
+                        <li>Material: Carbono</li>
+                        <li>Talla: M</li>
+                        <li>Color: Negro</li>
+                        <li>Precio: $000000</li>
+                    </ul>
+
+                </div>
+                <footer class="d-flex justify-content-between align-items-center py-3 bg-light px-3 footer ">
+                    <span>&copy; 2024 Cascos YC</span>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/scriptGeneral.js"></script>
+
+</body>
+</html>
